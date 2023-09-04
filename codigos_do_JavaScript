@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <!--Ocultar Texto-->
+        <h1 id="texto">  Olá mundo  </h1>
+
+<button type="button" 
+onclick="document.getElementById('texto').style.display='none'"> Aperte para Ocultar</button>
+
+        <p id="demo">
+            Seja Bem vindo na página!<br>
+        </p>
+<button type="button" 
+onclick='document.getElementById("demo").innerHTML= "Obrigado por acessar meu site!" '> Aperte Aqui! </button>
+
+
+
+
+ <!--imagem-->
+ <div>
+    <button onclick="document.getElementById('lampada').src='acesa.png'">
+        Ligue a lâmpada</button>
+        <img id="lampada" src="apagada.png" style="width:100px">
+        <button onclick="document.getElementById('lampada').src='apagada.png '">
+        Desligue a lâmpada</button>
+</div>
+
+<!--console.log 20*2-->
+ <script>
+    console.log (20*2)
+ </script>
+
+
+ <!--Exercicios 5-->
+ <h2 id="br" >      
+          
+    Caminhoneiro 
+    <script>
+        var postNome = "Brasil Caminhoneiro"
+        document.getElementById('br').innerHTML= postNome;
+    </script>
+
+    <button 
+    onclick="window.print()">
+    
+    Imprima essa página
+    </button> </h2>
+    
+<div>
+<script>
+    var x = subitraçao(4, 8); 
+function subitraçao(num1, num2) {
+return 4 - 8;
+}
+
+</script>
+    <p id="demo"> 20 </p>
+    <script>
+ var x = subitração(4, 8); 
+function subitração(num1, num2) {
+return 4 - 8;
+document.getElementById("demo").innerHTML= subitração
+}
+</script>
+
+<!--Função Atividade 8-->
+<p id="refeição1">  </p>
+<script>
+var refeição;
+var hora = new Date().getHours();
+
+if (hora < 9 ){
+    refeição= "hora do café da manhã!";
+}else if (hora >9 && hora <13 ){
+    refeição= "hora do almoço!";
+}else if (hora >13 && hora <18){
+    refeição= "hora do café da tarde!";
+}else if (hora >18 && hora <24){
+    refeição= "hora da janta!";
+}
+ document.getElementById("refeição1").innerHTML=refeição;
+</script>
+
+ </div>
+
+
+
+
+</body>
+
+</html>
